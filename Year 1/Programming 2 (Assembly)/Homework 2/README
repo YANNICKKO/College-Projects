@@ -1,0 +1,30 @@
+Task 1: Doar i-am luat valoarea si am adunat un cifru. Impartim la 26
+si luam restul (in caz ca trece peste Z). Adaugam inapoi 'A' si cam
+asta e.
+
+Task 2: Am adunat toti x si y (daca sunt doar pe ox si ox 2 dintre ei
+se vor simplifica), iar daca este negativa distanta facem invers
+calculele.
+Tot ce facem la road in plus este ca luam 2 cate 2 puncte, asa ca incepem
+cu un ecx mai mic.
+La square mergem prin toate valorile pana la n si le facem patratul. Daca
+patratul este egal cu n atunci il notam cu 1, daca trecem prin toate si
+nu gasim il trecem ca 0.
+
+Task 3: Mergem element cu element. Impartim pozitia la care suntem la len_key. Restul este pozitia de pe key. Acum ca stim pozitia scoatem
+cheia necesara. Scadem din cheie plain. Daca este negativa mai adaugam 26 pentru a fi o litera. Sunt cateva xoruri care sunt acolo sa fiu sigur.
+
+Task 4: Am facut practic 4 for-uri intr-un alt for. Si pe fiecare for
+l-am impartit in 4 parti. 
+La inceput initializez collow, linlow cu 0 si colhig, linhig cu n-1. 
+Calculam si n^2. 
+Fiecare for este facut din o parcurgere (care e la stanga dreapta, ma rog,
+intelegeti si voi).
+1. Incepem cu a baga plain in cl. Pentru a calcula cheia cautam care este
+i*n + j corespunzator. (I sau J sunt ori o line ori o coloana pe care am
+tinut-o minte, iar celalalt fie eax/ edx - cei cu care iteram). 
+2. Dupa fiecare element adunam ebx si verificam daca am parcurs vectorul.
+3. Trebuie sa aducam eax/ edx din for pana cand ajunge la celalata
+linie/coloana.
+4. Reactualizam linia/ coloana necesara mai la dreapta/ stanga/ jos/ sus.
+(Depinde ce avem noi).

@@ -1,0 +1,40 @@
+Pentru inceput iau fiecare linie si ma uit ce comanda este.
+Daca este insert am facut o functie de inserare in data_structure,
+charurile le-am bagat cu strlen + 1, iar inturile cu 3 if-uri in functie
+de fiecare tip. Dupa toate alocarile intorc data.
+
+Pentru insert:
+Apelez functia ad_last si apoi dezalochez toata structura alocata.
+In add_last caut daca array-ul exista sau nu pentru a-l aloca sau 
+realoca. Dupa copiez din structura header-ul si toate datele si 
+maresc len cu marimea array-ului in bytes.
+
+Pentru insert_at:
+Am facut o functie de gasirea index-ului pentru ca il voi cauta si la 
+find si la delete. In el doar il parcurg dupa char-uri, pana la '\0', 
+adaug marimea int-urilor dupa tip si dupa iar parcurg celalalt char.
+Dupa ce parcurg fiecare element cresc indexul, daca index_count (cel 
+pe care, dupa fiecare loop creste, adica am parcurs un element) este
+egal cu indexul pe care il caut ma opresc si returnez dimensiunea in 
+bytes.
+Dupa find_index doar realloc si mut memoria mai incolo pe care o gasesc in 
+data->header->len si copiez datele din structura. Adun len.
+
+Pentru find
+Apelez find_index si printez de la dimeniunea pe care am gasit-o a indexului, si
+apelez fucntia print cu 1 pentru a se face doar pentru un element.
+
+Pentru delete_at:
+apelez find_index si le mut mai in stanga cu datele pe care le gasesc la 
+inceputul indexului (*arr + aux + 4) (pentru ca primele date sunt headerul, 
+pe primul byte este tipul, 3 de padding si de abia pe al 4-lea este len).
+Scad len si realloc cu o dim mai mica.
+
+Pentru print:
+Parcurg pana la '\0' si dau print char cu char. Adaug dimensiunea int-urilor
+pentru ca trebuie sa parcurg al doilea char. Dupa printez doua int-uri in
+fucntie de tip (am tinut minte unde incep). Fac asta pana la sfarsitul 
+array-ului.
+
+Pentru exit:
+Doar dezaloc array-ul si linia in care tineam minte comenzile.
