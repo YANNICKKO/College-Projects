@@ -1,0 +1,59 @@
+Task 1 
+
+-Pentru a lua primii 3 biti shiftam tot numarul la dreapta cu 29 (32 – 3 = 29) si adaugam inca un element; 
+
+-Pentru a lua retstul operatiilor shiftam la stanga cu 3 (N) si apoi le luam 2 cate 2 de cate n ori; 
+
+-Am zis ca nu am folosit niciodata switch, asa ca am vazut aceasta ocazie si am folosit-o (Imi cer scuze daca va ard ochii.) Am egalat vectorul Op cu fiecare valoare pentru a afisa operatia. 
+
+-Dimenisunea se afla cu shiftarea operatiilor la stanga cu 28 (32 – 4) si adaugam inca un element; 
+
+ 
+
+Task 2 
+
+ 
+
+-Am folost un if/ else daca formula (N + 1) * Dim) / 16 este cu virgula, si daca da sa adaugam 1.  
+
+-Am folosit un for pentru a parcurge fiecare numar citit (operanzi_mari), iar cu un alt for parcurgem aceste numere cu Dimensiunea data pana cand avem destule numere (contor == N+1). Pentru afla elementul trebuie sa shiftam numarul cu Dimensiunea * a cata submultime este, apoi shiftam inapoi cu 16 – Dim pentru a aduce numarul la dreapta. 
+
+-Folosim acelasi switch ca la task 1, in loca de a prita adunam la rezultat pe care il initializam cu pimul element. 
+
+ 
+
+Task 3 
+
+ 
+
+-Pe langa ce am folosit la task-ul anterior, am folosit un if (16 % Dim != 0). In acest if shiftam la stanga toate numerele citite deja mai sus, iar apoi la shiftam la stanga cu 16 – Dim pentru a lasa loc restului de numar pe care il luam din urmatorul shiftat cu stanga. Egalam numarul mare urmator cu numarul fara prima parte a numarului precedent. Parte_numar este ce mai ramane din vector atunci cand impartim 16/Dim, iar el se shimba de fiecare data dupa formula parte_numar = 16 - (Dim - parte_numar + (Dim * (16 / Dim - 1))). Am folosit inca un if pentru cazul in care Dim - parte_numar + (Dim * (16 / Dim - 1)) >= Dim .(De exemplu, daca avem Dim = 7 si parte_numar ajunge la 6 dupa cateva apelari, urmatorul numar va fi [1,7,7,7,1], ceea ce inseamna ca trebuie sa apelam de 16 / Dim ori, nu de 16 / Dim - 1, pe care l-am transformat intr-un contor. 
+
+ 
+
+Task 4 
+
+-Am porit cu un for care imi calculeaza daca gaseste o operatie de * sau /. Daca da aduna un numar pentru a vedea cate operatii sunt pana cand gaseste o alta operatie. Cand gaseste prima * sau / punem primul rezultat ca fiind primul operant. 
+
+-Daca gasim o operatie  diferica de * sau / si in spate avem o operatie de genul pornim de la primul operant *sau/ pana la i-ul nostru. Iar daca gasim o * inmultim, iar / impartim. Dupa ce am calculat toate operatiile de gradul 2 si am egalat toate elementele ce se * sau / cu 0 trebuie sa vedem si semnul lor, care  este primul element * sau / gasit – 1( In cazul in care acest element este primul element va fi pozitiv.)  
+
+-Adunam toate rezultatele_1 intr-un alt rezultat_2; 
+
+-La sfarsit parcurgem vectorul adunand sau scazand in functie de 0 sau 1 (Elementele * sau / fiind egale cu 0). 
+
+-Rezultatul final va fi adunat cu rezultatul numerelor * sau /. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 

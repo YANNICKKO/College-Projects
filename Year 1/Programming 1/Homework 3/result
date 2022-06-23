@@ -1,0 +1,40 @@
+
+Run cpplint
+
+./bmp_header.h:21:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:15:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:20:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:21:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:27:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:28:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:34:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:36:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:41:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:44:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:46:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:48:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:50:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:118:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:131:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:146:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:166:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:169:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:172:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:198:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:206:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:207:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:209:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:211:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:221:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:222:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:223:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+./task1.c:230:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+Done processing ./bmp_header.h
+Done processing ./task1.c
+Total errors found: 28
+
+Run clang-tidy-12
+
+13 warnings generated.
+Suppressed 13 warnings (13 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

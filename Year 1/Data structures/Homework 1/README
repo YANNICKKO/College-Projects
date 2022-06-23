@@ -1,0 +1,20 @@
+Am multe functii de comparatie de frecvente nume si toate cele pentru ordoanare
+lexicografica sau pentru a ma uita daca exista sau nu element cu acea frecventa in lista.
+Ele se gasesc explicate in fisierul header cu structuri. Am incercat sa fac mai putine
+functii de printare, dar era dubioasa, la unele cu spatiu la altele fara.
+
+Am citit din fisier toate liniile si am facut functii ca de la laborator, am incercat sa le folosesc pe
+cele generice, dar pana la urma mi-am facut singur fucntiile pentru ca dura mult prea mult sa
+fac functii cu mult prea multi parametrii doar pentru a casta.
+
+Dupa luam cuvant cu cuvant din string-ul de linie si vedem daca este pestre 3 litere si daca este
+litera sau cifra. Daca da il inseraa. In functia de inserare ma uit daca in prima lista exista o celula
+cu lungimea respectiva. Daca nu o faca. Inserez dupa in a doua lista. Ma uit daca exista deja cunvatul in
+lista respectiva. Daca da, dezalochez celula respectiva, si inserez din nou cu o frecventa mai mare, pentru
+a putea-o insera la locul unde trebuie. Inserare se face in functie de frecventa si apoi dupa
+ordinea lexico-grafica (rezultatul strcmp). Daca nu exista o inseram.
+
+Printarea, dupa cum am zis, este destul de dubioasa. Exista 4 functii main de printare. Una care intra in
+prima lista, pentru a doua lista si doua pentru printarea efectiva a structurii de cuvant (daca este primul,
+si a doua daca este al doilea sau mai incolo). Mai sunt 4 la fel pentru a doua printare, pentru a cauta
+frecventa pentru care printam. Cautam frecventa cu cautaFrecventaMare si Mica. Iar pentru a 3 printare
